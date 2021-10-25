@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Data_Structures_struggle.dir/stacks/contigous/stack.c.o -o Data_Structures_struggle 

@@ -1,0 +1,3 @@
+/home/chamasha/Desktop/Data-Structures-struggle/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/chamasha/Desktop/Data-Structures-struggle/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/chamasha/Desktop/Data-Structures-struggle/cmake-build-debug/CMakeFiles/Data_Structures_struggle.dir
