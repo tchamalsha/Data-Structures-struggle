@@ -57,6 +57,9 @@ QueueEntryType remove(Queue *q){
         np=q->front;
         data=np->data;
         q->front=np->next;
+        if(q->front==NULL){
+            q->rear=NULL;
+        }
         free(np);
         q->count--;
         return data;
