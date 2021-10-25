@@ -7,13 +7,14 @@ typedef struct queue{
     int front;
     int rear;
     int count;
-    QueueEntryType array[MAX];
+    int array[MAX];
 }Queue;
 
 void createQueue(Queue *q){
     q->front=0;
     q->rear=-1;
-};
+    q->count=0;
+}
 
 Boolean isEmpty(Queue *q){
     return (q->rear-1);
@@ -26,8 +27,8 @@ void insert(Queue *q,QueueEntryType data){
     if(isFull(q)){
         printf("Queue is full!!");
         exit(1);
-    } else{
-        q->rear++;
+    }else{
+        q->rear=(q->rear+1)%MAX;
         q->array[q->rear]=data;
         q->count++;
     }
@@ -38,10 +39,9 @@ QueueEntryType remove(Queue *q){
         printf("Queue is empty!");
         exit(1);
     }else{
-        QueueEntryType data=q->array[q->front];
-        q->front++;
-        q->count-;
+        QueueEntryType data =q->array[q->front];
+        q->front=(q->front+1)%MAX;
+        q->count--;README
         return data;
     }
 }
-
