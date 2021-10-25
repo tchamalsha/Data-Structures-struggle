@@ -20,7 +20,7 @@ Boolean isEmpty(Queue *q){
     return (q->rear-1);
 }
 Boolean isFull(Queue *q){
-    return (q->count==MAX)
+    return (q->count==MAX);
 }
 
 void insert(Queue *q,QueueEntryType data){
@@ -41,7 +41,7 @@ QueueEntryType remove(Queue *q){
     }else{
         QueueEntryType data =q->array[q->front];
         q->front=(q->front+1)%MAX;
-        q->count--;README
+        q->count--;
         return data;
     }
 }
