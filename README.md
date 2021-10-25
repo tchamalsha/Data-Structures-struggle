@@ -1,5 +1,5 @@
 # Data-Structures-struggle
-Repository that contains data structures concepts.
-1.Stacks
-2.Queues
-3.Lists
+Repository that contains data structures concepts.<br><br>
+1.Stacks<br>
+2.Queues<br>
+3.Lists<br>
